@@ -18,7 +18,7 @@ function displayResults(results) {
                 <p><span>📚 الحلقة:</span> ${result.class_name}</p>
                 <p><span>🕌 الجامع:</span> ${result.teacher_name || 'غير محدد'}</p>
                 <p><span>📅 التاريخ:</span> ${result.result_date}</p>
-                <p class="score"><span>🏆 النتيجة:</span> ${result.score}%</p>
+                <p class="score"><span>📄 النتيجة:</span> ${result.score}%</p>
             </div>
         </div>
     `).join('');
