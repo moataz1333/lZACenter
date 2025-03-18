@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>لوحة التحكم</title>
+    <link href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Lateef&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .admin-container {
+            max-width: 800px;
+            margin: 3rem auto;
+            padding: 2rem;
+            background: rgba(255,255,255,0.9);
+            border-radius: 15px;
+            box-shadow: 0 0 20px rgba(0,0,0,0.1);
+        }
+
+        .admin-form input,
+        .admin-form select {
+            width: 100%;
+            padding: 1rem;
+            margin: 0.8rem 0;
+            border: 2px solid var(--quran-green);
+            border-radius: 8px;
+            font-size: 1.1rem;
+        }
+
+        .admin-form button {
+            background: var(--quran-green);
+            color: white;
+            padding: 1rem 2rem;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+
+        .admin-form button:hover {
+            background: #1B5E20;
+        }
+    </style>
+</head>
+<body>
+    <header class="islamic-header">
+        <div class="header-frame">
+            <h1>📖 مركز الإمام زيد بن علي لتحفيظ القرآن الكريم 📜</h1>
+            <p class="quran-verse">"وَلَقَدْ يَسَّرْنَا الْقُرْآنَ لِلذِّكْرِ فَهَلْ مِن مُّدَّكِرٍ" (القمر: 17)</p>
+        </div>
+        <nav>
+            <a href="index.html" class="nav-btn">النتائج</a>
+            <a href="#admin" class="nav-btn">لوحة التحكم</a>
+        </nav>
+    </header>
+
+    <div class="admin-container">
+        <h2 class="section-title">الإدارة الإلكترونية</h2>
+        <form class="admin-form" id="resultForm">
+            <input type="text" id="studentName" placeholder="اسم الطالب" required>
+            <input type="text" id="className" placeholder="اسم الحلقة" required>
+            <input type="text" id="teacherName" placeholder="اسم الجامع">
+            <input type="number" id="score" min="0" max="100" placeholder="الدرجة" required>
+            <button type="submit">إضافة النتيجة 🖋️</button>
+        </form>
+    </div>
+
+    <footer class="footer">
+        <p>جميع الحقوق محفوظة &copy; لدي مركز الإمام زيد بن علي لتحفيظ القرآن الكريم</p>
+        <p>تمت البرمجة بواسطة المسؤول التقني/ معتز التريكي 💚</p>
+    </footer>
+
+    <script src="admin.js"></script>
+</body>
+</html>

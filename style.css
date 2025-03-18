@@ -1,0 +1,102 @@
+:root {
+  --quran-green: #2E8B57;
+  --golden: #C5A047;
+  --cream: #FFFDE7;
+  --dark-text: #2F4F4F;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Amiri', serif;
+  background: var(--cream);
+  line-height: 1.8;
+  color: var(--dark-text);
+}
+
+.islamic-header {
+  background: linear-gradient(135deg, var(--quran-green) 0%, #1B5E20 100%);
+  color: white;
+  padding: 2rem 1rem;
+  text-align: center;
+  border-bottom: 3px solid var(--golden);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.header-frame {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1rem;
+  border: 2px dashed rgba(255, 255, 255, 0.3);
+  border-radius: 10px;
+}
+
+.quran-verse {
+  font-family: 'Lateef', cursive;
+  font-size: 2rem;
+  color: var(--golden);
+  margin-top: 1rem;
+}
+
+.results-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.5rem;
+  padding: 2rem;
+}
+
+.result-card {
+  background: white;
+  border-radius: 12px;
+  padding: 1.5rem;
+  box-shadow: 0 4px 6px rgba(46, 139, 87, 0.1);
+  transition: transform 0.3s;
+  border: 1px solid var(--quran-green);
+}
+
+.result-card:hover {
+  transform: translateY(-5px);
+}
+
+.section-title {
+  font-family: 'Lateef', cursive;
+  font-size: 2.5rem;
+  color: var(--quran-green);
+  text-align: center;
+  margin: 2rem 0;
+  border-bottom: 2px solid var(--golden);
+  padding-bottom: 0.5rem;
+}
+
+.nav-btn {
+  display: inline-block;
+  padding: 0.8rem 1.5rem;
+  margin: 0 0.5rem;
+  background: rgba(255, 255, 255, 0.1);
+  color: white;
+  text-decoration: none;
+  border-radius: 30px;
+  transition: all 0.3s;
+}
+
+.nav-btn:hover {
+  background: var(--golden);
+  color: var(--quran-green);
+}
+
+.footer {
+  text-align: center;
+  padding: 1rem;
+  background: var(--quran-green);
+  color: white;
+  margin-top: 2rem;
+}
+
+.footer p {
+  margin: 0.5rem 0;
+  font-size: 1rem;
+}
